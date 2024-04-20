@@ -27,6 +27,11 @@ console.log('modalRef.current', modalRef.current)
             <button onClick={()=> inputRef.current.focus()} className=' border-none bg-gray-200 px-3 py-1'>Focus</button>
         </div>
         <br/>
+        <p className=' text-white font-light text-base md:text-lg lg:text-xl text-justify '>
+            *-even you dont need declare or pass many props to a component for refrence to its element,instead you can use <br/>
+            useImperativeHandle hook by the syntax in the impretiveModal component,also remmember the child component always must<br/>
+            export by "Ract.forwardRef(component)",unless it will throw an error!!!
+        </p>
         <div>
          
             <div>
